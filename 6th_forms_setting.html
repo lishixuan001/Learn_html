@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- cellspace: 单元格之间的距离，默认为2px -->
+    <!-- align: 格式：靠左／剧中／靠右 -->
+    <!-- border: 每个格的边框 -->
+    <!-- cellpadding: 单元格内容与边框的距离，默认为2px -->
+    <!-- frame: 控制边框: "void"代表无边框。可以控制边框的位置(上边框，下边框等) -->
+    <!-- rule: 控制是否显示，以及如何显示单元格之间的分界线 -->
+    <table width="960" height="300" border="1" align="center" cellspacing="2" cellpadding="2" frame="bx" rules="all">
+      <caption align="top">表格的标题</caption>
+      <!-- 每一个表格行都用"tr"标记 -->
+      <!-- valign: 上下的对齐 -->
+      <tr bgcolor="#ccc" align="center" valign="center">
+        <!-- 表头标记用"th" -->
+        <th bgcolor='yellow' align='left'>班级</th>
+        <!-- rowspan/colspan: 设置单元格占的行数 -->
+        <th width="100" height="50" rowspan="2">姓名</th>
+        <th>年龄</th>
+        <th>成绩</th>
+      </tr>
+
+      <tr>
+        <td>一班</td>
+        <td>张三</td>
+        <td>16</td>
+        <td>80</td>
+      </tr>
+
+      <tr>
+        <td>二班</td>
+        <td>李四</td>
+        <td>17</td>
+        <td>90</td>
+      </tr>
+    </table>
+  </body>
+</html>
