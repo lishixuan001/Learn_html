@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>9th_form_design</title>
+  </head>
+  <body>
+    <!-- "action"定义了传送的目的地，"post"是一种传送方式，具有保密性，打包传送 -->
+    <form class="" action="index.html" method="post">
+      账号: <input type="text" name="name" value="请输入用户名" size="15" maxlength="5">
+      <br>
+      <br>
+      密码: <input type="password" name="password" value="请输入密码" size="15" maxlength="5">
+      <!-- “hidden”意味着隐藏内容，不予显示，但是会被一同提交 -->
+      <input type="hidden" name="hidden_password" value="hidden_content" size="10">
+      <br>
+      <br>
+      <!-- 设置两个"radio"的"name"值一样，则可以达到选一不选二的效果，否则可以两个都选 -->
+      性别: <input type="radio" name="gender">男
+           <input type="radio" name="gender">女
+      <br>
+      <br>
+      <!-- "type"是"checkbox"的时候，可以让用户先点选以后取消选择 -->
+      <!-- "checked"表示默认选项 -->
+      爱好: <input type="checkbox" name="sports" checked>体育
+           <input type="checkbox" name="singing">唱歌
+      <br>
+      <br>
+      <!-- "select"表示能下拉的列表 -->
+      地址： <br>
+      <select class="" name="address">
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+      </select>
+      <br>
+      <br>
+      <!-- "multiple"可以允许用户多选 [拉动多选，或者按住command键多选]-->
+      编程语言： <br>
+      <select class="" name="cs_langu" multiple>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="c++">C++</option>
+      </select>
+      <br>
+      <br>
+      自我介绍: <br>
+      <textarea name="self_intro" rows="5" cols="30"></textarea>
+      <br>
+      <br>
+      <input type="submit" name="" value="提交">
+      <input type="reset" name="" value="重置">
+      <input type="button" name="" value="按钮">
+    </form>
+  </body>
+</html>
