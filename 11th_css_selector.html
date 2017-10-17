@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css_selector</title>
+    <style type="text/css" media="screen">
+      /*可以同时控制多种选择器, 除了一般的还有class和id*/
+      h1,h2,h3,p,someclass,#someid {color:orange; font-size:28px}
+      /*以下定义了一个类，在以后的格式中可以被引用*/
+      .p {color:green; font-size:28px;}
+      /*这样可以单独控制下面div里面的p标记*/
+      .pp {color:red;}
+      作为id的ppp可以单独作用，但这不是它的一般用途
+      #ppp {color:purple;}
+      /*首先提示下面的ppp会覆盖上面的*/
+      /*这样代表在ppp的id的时候，其中包含的p的格式全部为以下定义*/
+      #ppp p{color:blue}
+      #ppp h1{color:pink}
+      /*优先级：ID > Class > HTML*/
+
+      /*没有被点击过的超链接的颜色*/
+      a:link {color:green}
+      /*鼠标一放上去就显示的颜色*/
+      a:hover {color:orange}
+      /*鼠标按下去时显示的颜色*/
+      a:active {color:purple}
+      /*被点击过的超链接的颜色*/
+      a:visited {color:red}
+
+    </style>
+  </head>
+  <body>
+    <p>This is defined with h1,h2,...</p>
+    <h1>This is defined with above</h1>
+    <h2>This is defined with above</h2>
+    <!-- 使用之前定义的class作为格式 -->
+    <p class="pp">Some paragraph</p>
+    <!-- div作为区域表达，放在div上的格式自动覆盖其中的内容 -->
+    <div id="ppp" class="p">
+      ppp does not define this, so just go with class "p"
+      <!-- 这里面的class="pp"可以不加 -->
+      <p class="pp">有优先级的问题</p>
+      <p>This has been defined as purple with 'ppp'</p>
+      <h1>This should be pink</h1>
+    </div>
+
+    <p class="someclass">The above related method can also define class</p>
+    <p id="someid">The same as above for id</p>
+
+    <a href="http://www.qq.com" target="_blank">QQ</a>
+    <a href="http://www.baidu.com" target="_blank">百度</a>
+  </body>
+</html>
