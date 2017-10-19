@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css_border</title>
+    <style media="screen">
+      div{
+        width: 50px;
+        height: 50px;
+
+        /*一些关于页面调节的设置*/
+        float: left;
+        margin-right: 10px;
+        background-color: #f60;
+
+        /*边框形式*/
+        /*中间的left/right/top/bottom表示加边框的位置*/
+        border-top-style: none;
+        border-bottom-style: inherit;
+        border-left-style: solid;
+        border-right-style: dashed;
+        border-style: dotted;
+        border-style: double;
+        border-style: groove;
+        border-style: ridge;
+        border-style: inset;
+        border-style: outset;
+
+        /*边框宽度*/
+        border-width: inherit;
+        border-top-width: thin;
+        border-bottom-width: medium;
+        border-left-width: thick;
+        border-right-width: inherit;
+        border-width: 5px;
+
+        /*边框颜色*/
+        /*对于border-color来说：
+          一个值：(上，下，左，右);
+          两个值：(上下) (左右);
+          三个值：(上) (左，右) (下);
+          四个值：(上) (右) (下) (左);*/
+        border-color: inherit;
+
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-color: green blue yellow red;
+
+        /*简写方式: style + border + color;*/
+        border: solid 6px green;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

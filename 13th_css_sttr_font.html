@@ -5,9 +5,44 @@
     <title>Font_Attribute</title>
   </head>
   <style type="text/css" media="screen">
+    /*这样和和h1和h2字体大小一样*/
+    /*h1,h2{font-size: 30px;}*/
+
+    /*我们设置了body作为h1和h2的"父元素"以后，可以用%来定义h1和h2的字体，以父元素为基准*/
+    /*同时介绍"smaller","larger"和"inherit"的用法*/
+    /*body{font-size: 30px;}
+    .ha{font-size: smaller;}
+    h1{font-size: 100%;}
+    .hi{font-size: inherit;}
+    .hb{font-size: larger;}
+    h2{font-size: 200%;}*/
+
+    /*可以定义字体，可以用','隔开，表示优先级，如果现实的电脑没有该字体则向后顺延*/
+    /*h1{font-family: Microsoft YaHei,Futura;}*/
+
+    /*字体的粗细设置[normal,bold,lighter,bolder;]*/
+    /*.ha{font-weight: bold;}
+    .hi{font-weight: lighter;}
+    .hb{font-weight: bolder;}*/
+
+    /*字体还可以用数字表; normal=400; bold=700; 取值范围[100~900]整百数*/
+    /*.ha{font-weight: 200;}
+    .hi{font-weight: 700;}
+    .hb{font-weight: 900;}*/
+
+    /*字体样式的改变; normal,italic(斜体),oblique(倾斜),inherit(继承)*/
+    /*.ha{font-style: italic;}
+    .hi{font-style: oblique;}*/
+
+    /*把小写字母转化为小型全大写字母显示文本; normal, small-caps, inherit*/
+    /*.ha{font-variant: small-caps;}*/
 
   </style>
   <body>
-    
+    <h1 class="ha">Smaller Heading</h1>
+    <h1>First Heading</h1>
+    <h1 class="hi">Inherit Heading</h1>
+    <h1 class="hb">Larger Heading</h1>
+    <h2>Second Heading</h2>
   </body>
 </html>

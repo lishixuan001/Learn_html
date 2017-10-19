@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css_text</title>
+    <style media="screen">
+      div{
+        width: 400px;
+        height: 400px;
+      }
+      p{
+        /*文本位置; 剧中/左/右*/
+        text-align: center;
+
+        /*文本行高; %(参照物为字体大小),px*/
+        /*如果字体大，行高小，则会出现重叠*/
+        font-size: 20px;
+        line-height: 10px;
+        line-height: 100%;
+
+        /*首行缩进; %(参照物为字体大小),px,inherit*/
+        /*此处%的参照物是上方定义的div的width*/
+        text-indent: 50%;
+        text-indent: 40px;
+
+        /*字符间距; 默认normal/length设置具体数值，也可以是负值(重叠)/inherit*/
+        letter-spacing: 5px;
+
+        /*单词间距; normal, px, inherit*/
+        word-spacing: 30px;
+
+        /*文本方向; ltr(左到右)，rtl(右到左)，inherit;*/
+        /*前面的设置中有会影响到该属性的表达，去掉前面的属性即可看到效果*/
+        direction: rtl;
+
+        /*文本大小写;*/
+        text-transform: capitalize; /*每个单词大写字母开头*/
+        text-transform: uppercase; /*全大写*/
+        text-transform: lowercase; /*全小写*/
+        text-transform: inherit;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Some Text Some Text Some Text Some Text Some Text</p>
+      <p>Extremely redunctant vocabulary</p>
+    </div>
+  </body>
+</html>

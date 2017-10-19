@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css_background</title>
+    <style media="screen">
+      /*定义背景颜色*/
+      /*body{background-color: red}
+      body{background-color: rgb(255,255,255);}*/
+
+      /*定义背景图片; 用url连接路径*/
+      /*body{background-image: url(img/JPG.jpg);}*/
+
+      /*背景重复; repeat(重复平铺),repeat-x(左右方向重复),repeat-y(上下方向重复),no-repeat(不重复)*/
+      /*body{background-repeat: repeat-x;}*/
+      /*body{background-repeat: no-repeat;}*/
+
+      /*背景位置；left/center/right; top/center/bottom;*/
+      /*单独的输入则等同于默认加一个‘center’*/
+      /*body{background-position: left;}
+      body{background-position: left,top;}*/
+      /*代表间隔的像素；若只属于一个则同上默认另一属性‘center’*/
+      /*body{background-position: 20px, 40px;} */
+
+      /*简写方式：用‘background’一个属性概括之前所有*/
+      body{background: pink;}
+      div{
+        width: 400px;
+        height: 400px;
+        /*简写方式: color + image + repeat + location;*/
+        background: orange url(img/JPG.jpg) no-repeat 20px 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

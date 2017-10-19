@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css_list</title>
+    <style media="screen">
+      /*无序列表*/
+      ul{
+        /*标记的类型*/
+        list-style-type: none;
+        list-style-type: disc;
+        list-style-type: square;
+        list-style-type: /*也可以放带标号类型的，展示成有序列表形式*/
+      }
+
+      /*有序列表*/
+      ol{
+        /*标记的类型*/
+        list-style-type: decimal-leading-zero;
+        list-style-type: lower-roman;
+        list-style-type: upper-alpha;
+        list-style-type: /*也可以放不带标号类型的，展示成无序列表形式*/
+      }
+
+      /*标记的位置*/
+      /*outside: 标记于文本左侧; inside: 标记放置在文本内; inherit*/
+      ul.inside{
+        list-style-position: inside;
+      }
+      ul.outside{
+        list-style-position: outside;
+      }
+
+      /*图像列表标记; url,none,inherit;*/
+      ul{
+        list-style-image: url(img/item.jpg);
+      }
+
+      /*简写方式: 标记类型 + 位置 + image;*/
+      若图片不存在，则会采用下方的'square'代替
+      ul{
+        list-style: square inside url(img/item.jpg);
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>无序列表</li>
+      <li>无序列表</li>
+      <li>无序列表</li>
+    </ul>
+
+    <ol>
+      <li>有序列表</li>
+      <li>有序列表</li>
+      <li>有序列表</li>
+    </ol>
+
+    <ul class="inside">
+      <li>无序列表inside</li>
+      <li>无序列表inside</li>
+      <li>无序列表inside</li>
+    </ul>
+
+    <ul class="outside">
+      <li>无序列表outside</li>
+      <li>无序列表outside</li>
+      <li>无序列表outside</li>
+    </ul>
+
+  </body>
+</html>
